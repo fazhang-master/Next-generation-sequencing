@@ -14,7 +14,9 @@ Mac M2
 ## tempalte_CSV.csv样例
 
 ![image-20250904135443833](./img/tempalte_CSV.jpg)
-
+- barcode1/barcode2: 必须在template中，且方向和template一致
+- template: 包含barcode1，barcode2和spacer的链
+- spacer: 必须在template中，且方向和template一致
 - start_base: 默认写0
 - end_base: 从spacer(包括)到barcode2前的氨基酸数量
 - base_windows: 默认写5
