@@ -15,8 +15,9 @@ Mac M2
 
 ![image-20250904135443833](./img/tempalte_CSV.jpg)
 
-- start_base: 统一写0
+- start_base: 默认写0
 - end_base: 从spacer(包括)到barcode2前的氨基酸数量
+- base_windows: 默认写5
 
 ## 注意事项
 
@@ -33,4 +34,11 @@ Mac M2
   - 再次质控后的fasta文件：严格处理后的文件保存路径/output_trimmed.fastq
   - 针对spacer定位的区域进行扫描后的文件路径：严格处理后的文件保存路径
 ## 运行
-依次执行
+1、修改文件路径
+```bash
+file = "./" # 生成文件的目录
+tempalte_CSV = "tempalte_CSV.csv" # tempalte_CSV文件目录
+origin_F = './1-LHH23167_L1_1.fq' # 正向原始文件目录
+origin_R = './1-LHH23167_L1_2.fq' # 反向原始文件目录
+```
+2、依次执行
